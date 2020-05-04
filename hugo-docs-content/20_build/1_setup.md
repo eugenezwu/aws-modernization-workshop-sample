@@ -14,9 +14,9 @@ Building a workshop leverages several tools:
 ## 1. Clone Sample Repo
 You will need to have a little familiarity with git, if not you might want to lookup a git tutorial.
 
-Start by cloning the sample repo and push it to a repo on your own GitHub account.  Change the name of myCompany-Workshop :) 
+Start by cloning the base repo and push it to a repo on your own GitHub account.  Change the name of myCompany-Workshop :) 
 ```
-git clone https://github.com/aws-samples/aws-modernization-workshop-sample myCompany-Workshop
+git clone https://github.com/aws-samples/aws-modernization-workshop-base myCompany-Workshop
 ```
 > We use clone instead of fork as you will break this from the sample repo and change the name.  Once approved and published the repo will be called something to the effect aws-modernization-workshop-with-Company_Name
 

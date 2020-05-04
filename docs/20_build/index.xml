@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Build on AWS Modernization Workshop Sample Docs</title>
@@ -18,8 +18,8 @@
       <guid>https://aws-samples.github.io/aws-modernization-workshop-sample/20_build/1_setup/</guid>
       <description>Building a workshop leverages several tools:
  Git Hugo Hugo learn theme CloudFormation templates  1. Clone Sample Repo You will need to have a little familiarity with git, if not you might want to lookup a git tutorial.
-Start by cloning the sample repo and push it to a repo on your own GitHub account. Change the name of myCompany-Workshop :)
-git clone https://github.com/aws-samples/aws-modernization-workshop-sample myCompany-Workshop   We use clone instead of fork as you will break this from the sample repo and change the name.</description>
+Start by cloning the base repo and push it to a repo on your own GitHub account. Change the name of myCompany-Workshop :)
+git clone https://github.com/aws-samples/aws-modernization-workshop-base myCompany-Workshop  We use clone instead of fork as you will break this from the sample repo and change the name.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ git clone https://github.com/aws-samples/aws-modernization-workshop-sample myCom
       
       <guid>https://aws-samples.github.io/aws-modernization-workshop-sample/20_build/10_editing/</guid>
       <description>Directory Tree Directory of artifacts you will add, change, delete during the course of building a workshop.
-/ |-content |---10_first_section |---20_second_section |---30_third_section |-modules |-samples |---cloudformation |---codebuild |-static |---images |config.toml  Editing Hugo uses markdown to generate static html pages. This makes it easier to create a web based workshop as all you need to do is create documents using markdown and Hugo will create the pretty html for you. For additional information on markdown, visit the learn theme documentation page https://learn.</description>
+/ |-content |---_index.md |-static |---images |config.toml  Editing Hugo uses markdown to generate static html pages. This makes it easier to create a web based workshop as all you need to do is create documents using markdown and Hugo will create the pretty html for you. For additional information on markdown, visit the learn theme documentation page https://learn.</description>
     </item>
     
     <item>

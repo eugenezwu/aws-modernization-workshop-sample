@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="AWS Modernization Workshop">
 <meta name="author" content="James Bland">
 
@@ -12,20 +12,20 @@
     <title>Edit and Build :: AWS Modernization Workshop Sample Docs</title>
 
     
-    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/theme.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1581661357" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/theme.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1588629914" rel="stylesheet">
     
-      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1581661357" rel="stylesheet">
+      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1588629914" rel="stylesheet">
     
 
-    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1588629914"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1581661357"></script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1581661357"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1588629914"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1588629914"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/aws-samples.github.io\/aws-modernization-workshop-sample\/";
     
 </script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1581661357"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1588629914"></script>
 
     
   </div>
@@ -538,22 +538,13 @@
 <h2 id="directory-tree">Directory Tree</h2>
 
 <p>Directory of artifacts you will add, change, delete during the course of building a workshop.</p>
-
-<pre><code class="language-bash">  /
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  /
    |-content
-   |---10_first_section
-   |---20_second_section
-   |---30_third_section
-   |-modules
-   |-samples
-   |---cloudformation
-   |---codebuild
+   |---_index.md
    |-static
    |---images
    |config.toml
- 
-</code></pre>
-
+ </code></pre></div>
 <h2 id="editing">Editing</h2>
 
 <p>Hugo uses markdown to generate static html pages.  This makes it easier to create a web based workshop as all you need to do is create documents using markdown and Hugo will create the pretty html for you.  For additional information on markdown, visit the learn theme documentation page <a href="https://learn.netlify.com/en/cont/markdown/" target="_blank">https://learn.netlify.com/en/cont/markdown/</a></p>
@@ -561,40 +552,31 @@
 <h4 id="config-toml-file">config.toml file</h4>
 
 <p>Start by editing the config.toml file. Only the Title needs to be edited at this time.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>
+languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-US&#34;</span>
+defaultContentLanguage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en&#34;</span>
 
-<pre><code class="language-bash">baseURL = &quot;/&quot;
-languageCode = &quot;en-US&quot;
-defaultContentLanguage = &quot;en&quot;
-
-title = &quot;AWS Modernization Workshop Sample&quot;
-theme = &quot;hugo-theme-learn&quot;
-metaDataFormat = &quot;yaml&quot;
-defaultContentLanguageInSubdir= true
-</code></pre>
-
+title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;AWS Modernization Workshop Sample&#34;</span>
+theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hugo-theme-learn&#34;</span>
+metaDataFormat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;yaml&#34;</span>
+defaultContentLanguageInSubdir<span style="color:#f92672">=</span> true</code></pre></div>
 <h4 id="start-hugo-server">Start Hugo Server</h4>
-
-<pre><code class="language-bash">hugo server
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server</code></pre></div>
 <blockquote>
 <p>Navigate to localhost:1313 in your browser to see the sample site</p>
 </blockquote>
 
 <h4 id="content-editing">Content editing</h4>
 
-<p>Now lets start editing content. Hugo uses the content stored in <code>content</code> to build web pages.  If you look under the directory there is a file _index.md.  This is the starting point of the documentation and is the equivalent of index.html.  Each folder becomes the high level navigation.  Each of the folders and files are prefixed with a number, which is there for visual ordering only and does not have an effect on the actual html or workshop order.  You will want to look at each and every file in the content directory tree and edit.</p>
+<p>Now lets start editing content. Hugo uses the content stored in <code>content</code> to build web pages.  If you look under the directory there is a file _index.md.  This is the starting point of the documentation and is the equivalent of index.html.  Each folder becomes the high level navigation.  Each of the folders and files are prefixed with a number, which is there for visual ordering only and does not have an effect on the actual html or workshop order.</p>
 
 <p>Start with <code>/content/_index.md</code>
-Each of the files has what Hugo calls front matter.  This is basically metadata that Hugo uses when generating the files.  Here is an example, note the Title and weight fields.  Weight controls the ordering, lower number the higher the order.</p>
-
-<pre><code class="language-bash">---
-title: &quot;Main Page&quot;
+Each file has what Hugo calls front matter.  This is basically metadata that Hugo uses when generating the files.  Here is an example, note the Title and weight fields.  Weight controls the ordering, lower number the higher the order.  Front matter weight is what actually orders the content in Hugo, prefixing numbers to files such as 1_my_content.md is only for visual ordering in your IDE/directory listing.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">---
+title: <span style="color:#e6db74">&#34;Main Page&#34;</span>
 chapter: true
-weight: 1
----
-</code></pre>
-
+weight: <span style="color:#ae81ff">1</span>
+---</code></pre></div>
 <p><strong>Edit</strong> The title and the text below the 3 dashes, now <strong>Save</strong> If everything went well the browser should refresh with the changes you have just make.</p>
 
 <h4 id="edit-folder-names-and-files">Edit folder names and files</h4>
@@ -602,15 +584,15 @@ weight: 1
 <p>The folder names are stubs and should be edited to make clear what type of content is stored in them.  The file <code>_index.md</code> within each folder sets the order using the weight front matter, and the name that appears in the left navigation pane.  Once again names are prefixed with a number only to visually sort, the <code>weight</code> is what really determines the ordering.</p>
 
 
-<div class="notices tip" ><p>When creating additional sections or pages, just copy the files from another section, rename and edit.</p>
+<div class="notices tip" ><p>When creating additional sections or pages, copy the files and folders from another section, rename and edit.</p>
 </div>
 
 
 <h4 id="samples-and-building-blocks">Samples and building blocks</h4>
 
-<p>In the repo <a href="https://github.com/aws-samples/aws-modernization-workshop-base" target="_blank">https://github.com/aws-samples/aws-modernization-workshop-base</a> there are several examples and content that you can copy and reuse in your workshop.
-* content directory - content for creating an account and Cloud9 instance.  Don&rsquo;t forget the images in static/images
-* samples directory is CloudFormation, CodeBuild, and other samples.  The CloudFormation folder is available publicly at <a href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/cfn/" target="_blank">https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/cfn/</a> so you can leverage existing templates for nesting and one-click deployments.</p>
+<p>In the repo <a href="https://github.com/aws-samples/aws-modernization-workshop-sample" target="_blank">https://github.com/aws-samples/aws-modernization-workshop-sample</a> there are several examples and content that you can copy and reuse in your workshop.
+* content directory - Various building blocks such as an account and Cloud9 instance.  Don&rsquo;t forget the images in static/images
+* code-samples directory is CloudFormation, CodeBuild, and other samples.  The CloudFormation folder is available publicly at <a href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/cfn/" target="_blank">https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/cfn/</a> so you can leverage existing templates for nesting and one-click deployments.</p>
 
 <p>Feel free to leverage these samples in your solution.  <strong>Note</strong> this is a workshop so samples are not meant to be best practice, but more for educational purposes only.  So if your workshop uses an RDS instance there is no reason to setup replication, backups, and everything else that goes along with making a robust solution, this is of course unless your workshop is on building robust fault tolerant solutions ;)</p>
 
@@ -620,7 +602,12 @@ weight: 1
 
 <h4 id="special-markdown-samples">Special markdown samples</h4>
 
-<p>See content/10_first_section/1_page.md for examples of short codes and special template code to help your workshop pop.</p>
+<ul>
+<li>Markdown cheat sheet <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></li>
+<li>Learn theme markdown <a href="https://learn.netlify.app/en/cont/markdown/" target="_blank">https://learn.netlify.app/en/cont/markdown/</a></li>
+<li>Menu extras and shortcuts <a href="https://learn.netlify.app/en/cont/menushortcuts/" target="_blank">https://learn.netlify.app/en/cont/menushortcuts/</a></li>
+<li>Using Font Awesome Emoji&rsquo;s <i class="fas fa-heart"></i> <a href="https://learn.netlify.app/en/cont/icons/" target="_blank">https://learn.netlify.app/en/cont/icons/</a> to help your page pop <i class="fas fa-glass-cheers"></i></li>
+</ul>
 
 
 <footer class="footline">
@@ -910,19 +897,19 @@ weight: 1
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1588629914"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/learn.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/learn.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1588629914"></script>
 
-    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1581661357" rel="stylesheet" />
-    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1581661357"></script>
+    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1588629914" rel="stylesheet" />
+    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1588629914"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

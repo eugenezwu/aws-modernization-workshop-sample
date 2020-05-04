@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="AWS Modernization Workshop">
 <meta name="author" content="James Bland">
 
@@ -12,20 +12,20 @@
     <title>Setup Environment :: AWS Modernization Workshop Sample Docs</title>
 
     
-    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/theme.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1581661357" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/theme.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1588629914" rel="stylesheet">
     
-      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1581661357" rel="stylesheet">
+      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1588629914" rel="stylesheet">
     
 
-    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1588629914"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1581661357"></script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1581661357"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1588629914"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1588629914"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/aws-samples.github.io\/aws-modernization-workshop-sample\/";
     
 </script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1581661357"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1588629914"></script>
 
     
   </div>
@@ -539,11 +539,8 @@
 
 <p>You will need to have a little familiarity with git, if not you might want to lookup a git tutorial.</p>
 
-<p>Start by cloning the sample repo and push it to a repo on your own GitHub account.  Change the name of myCompany-Workshop :)</p>
-
-<pre><code>git clone https://github.com/aws-samples/aws-modernization-workshop-sample myCompany-Workshop
-</code></pre>
-
+<p>Start by cloning the base repo and push it to a repo on your own GitHub account.  Change the name of myCompany-Workshop :)</p>
+<pre><code>git clone https://github.com/aws-samples/aws-modernization-workshop-base myCompany-Workshop</code></pre>
 <blockquote>
 <p>We use clone instead of fork as you will break this from the sample repo and change the name.  Once approved and published the repo will be called something to the effect aws-modernization-workshop-with-Company_Name</p>
 </blockquote>
@@ -551,22 +548,16 @@
 <h2 id="2-download-submodules">2. Download submodules</h2>
 
 <p>The repo uses git submodules so cd into the newly cloned repo:</p>
-
 <pre><code>git submodule init
-git submodule update
-</code></pre>
-
+git submodule update</code></pre>
 <h2 id="3-create-and-push-to-your-github-repo">3. Create and push to YOUR GitHub repo</h2>
 
 <p><strong>Create a repo in your GitHub account and follow the instructions under &ldquo;Push an existing repository from the commandline&rdquo;</strong></p>
 
 <h2 id="4-install-hugo">4. Install Hugo</h2>
-
 <pre><code>macOS: `brew install hugo`
 
-Windows: `choco install hugo -confirm`
-</code></pre>
-
+Windows: `choco install hugo -confirm`</code></pre>
 
 <div class="notices note" ><p>To make the creation of web page documentation easier, we utilize a tool called Hugo.  You will write your documentation/instructions using markdown language and Hugo will create static html content that can be served via S3.  Hugo additionally applies a theme so that the site will have an AWS look and feel plus add additional features to beautify and make content stand out.</p>
 
@@ -579,10 +570,7 @@ Windows: `choco install hugo -confirm`
 <h2 id="5-running-hugo">5. Running Hugo</h2>
 
 <p>From within the root of the repo</p>
-
-<pre><code>$ hugo server
-</code></pre>
-
+<pre><code>$ hugo server</code></pre>
 <p>Using a browser go to <a href="http://localhost:1313" target="_blank">http://localhost:1313</a> to view the site.  Hugo is dynamic, so as you edit the content and the page in the browser will change.  Allowing you to view in real-time what the content will look like.</p>
 
 
@@ -870,19 +858,19 @@ Windows: `choco install hugo -confirm`
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1588629914"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/learn.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/learn.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1588629914"></script>
 
-    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1581661357" rel="stylesheet" />
-    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1581661357"></script>
+    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1588629914" rel="stylesheet" />
+    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1588629914"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

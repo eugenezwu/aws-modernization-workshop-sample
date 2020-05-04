@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="AWS Modernization Workshop">
 <meta name="author" content="James Bland">
 
@@ -12,20 +12,20 @@
     <title>FAQs :: AWS Modernization Workshop Sample Docs</title>
 
     
-    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/theme.css?1581661357" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1581661357" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/theme.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1588629914" rel="stylesheet">
     
-      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1581661357" rel="stylesheet">
+      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1588629914" rel="stylesheet">
     
 
-    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1588629914"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1581661357"></script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1581661357"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1588629914"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1588629914"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/aws-samples.github.io\/aws-modernization-workshop-sample\/";
     
 </script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1581661357"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1588629914"></script>
 
     
   </div>
@@ -500,23 +500,23 @@
 
 <h2 id="faq-s">FAQ&rsquo;s</h2>
 
-<h4 align="left">
-Why do you use Cloud9?
-</h4>
+<p><strong>Why do you use Cloud9?</strong>
+A. When conducting workshops it is often difficult to determine the state of the users workstation and validate that all dependencies and requirements are installed.  With Cloud9 we get a capable IDE and shell access to the AWS account.  Git, aws-cli, programming languages, and many other tools are pre-installed which allows us to start everyone from a known state and not have to fumble around with missing components from someones workstation.</p>
 
-<p><p style="text-align:left;">A. When conducting workshops it is often difficult to determine the state of the users workstation and validate that all dependencies and requirements are installed.  With Cloud9 we get a capable IDE and shell access to the AWS account.  Git, aws-cli, programming languages, and many other tools are pre-installed which allows us to start everyone from a known state and not have to fumble around with missing components from someones workstation.</p>
+<p><strong>Can I change the License?</strong>
+A. We rather you not.  The site will be posted at aws-samples and the license included in the sample is MIT, which is meant to be simple and open source friendly.</p>
 
-<h4 align="left">
-Can I change the License
-</h4>
+<p><strong>What if I want to use other tools, such as Jenkins or Terraform as examples?</strong>
+A.  Great. We actually encourage you to use other tools and services as you may expect customers to use this in their environment.  Note that if you choose to use additional or alternative tools that it&rsquo;s easy for the end user to follow and does not detract from your main message.  As an example, if your main message is application security scanning, does it make a difference whether you use Jenkins or CodeBuild, or does the usage of one or the other add unnecessary complexity that has nothing to do with your message?  So don&rsquo;t reinvent the wheel and if there is already an example of instrumenting testing in CodeBuild, I would use that as the tool has nothing to do with your message.  But if your main message is instrumenting security scanning on Jenkins, then yes, use Jenkins.</p>
 
-<p><p style="text-align:left;">A. We rather you not.  The site will be posted at aws-samples and the license included in the sample is MIT, which is meant to be simple and open source friendly.</p>
+<p><strong>How long does a workshop take to create?</strong>
+A. As little as 3 days and as long as 2 months.  If the workshop creator is familiar with git, markdown, and AWS the content can be created in as little as 3 days, which includes testing out the workshop flow.  If the user is not familiar with some of these tools, there is a learn curve they will need to overcome.  Additionally, dedication also plays a factor.  To complete the workshop in 3 days requires full dedication.  If someone is splitting time with their &ldquo;day job&rdquo; and workshop creation then it can be expected to take longer.</p>
 
-<h4 align="left">
-What if I want to use other tools, such as Jenkins or Terraform as examples?
-</h4>
+<p><strong>What skill level are workshop participants?</strong>
+A. The spectrum varies from not familiar to experts.  Don&rsquo;t assume workshop participants are familiar with AWS and you should include links to areas of the console you want the user to navigate to.</p>
 
-<p><p style="text-align:left;">A.  Great. We actually encourage you to use other tools and services as you may expect customers to use this in their environment.  Note that if you choose to use additional or alternative tools that it&rsquo;s easy for the end user to follow and does not detract from your main message.  As an example, if your main message is application security scanning, does it make a difference whether you use Jenkins or CodeBuild, or does the usage of one or the other add unnecessary complexity that has nothing to do with your message?  So don&rsquo;t reinvent the wheel and if there is already an example of instrumenting testing in CodeBuild, I would use that as the tool has nothing to do with your message.  But if your main message is instrumenting security scanning on Jenkins, then yes, use Jenkins.</p>
+<p><strong>How long should a workshop be?</strong><br />
+A. The typical length of a workshop should be around ~2 hours to complete.  We have noticed that if it takes any more time the user will get bored and you may have a problem with drop outs.  If your content is longer than 2 hours, consider breaking it up into multiple modules.  Tip.  If breaking up into multiple modules, create a flow that participants can start up a new module without having to go back through previous modules again.  This allows workshop users to take breaks that may span days between modules.  This is typically accomplished by automating steps the participant followed in previous modules.</p>
 
 
 
@@ -804,19 +804,19 @@ What if I want to use other tools, such as Jenkins or Terraform as examples?
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1588629914"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/learn.js?1581661357"></script>
-    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1581661357"></script>
+    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/learn.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1588629914"></script>
 
-    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1581661357" rel="stylesheet" />
-    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1581661357"></script>
+    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1588629914" rel="stylesheet" />
+    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1588629914"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

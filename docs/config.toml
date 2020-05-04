@@ -6,6 +6,7 @@ title = "AWS Modernization Workshop Sample Docs"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
+enableEmoji = true
 
 [params]
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
@@ -62,5 +63,7 @@ name = "<i class='fas fa-users'></i> Partner Solutions Finder"
 url = "https://aws.amazon.com/partners/find/"
 weight = 30
 
-[blackfriday]
-hrefTargetBlank = true
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+    hrefTargetBlank = true

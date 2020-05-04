@@ -14,6 +14,8 @@ Workshops are meant to evolve, so a good story will be extended by other partner
 {{% /notice %}}
 
 ### Examples of some existing workshops
-* https://snyk.modernize.awsworkshop.io/
-* https://contrastsecurity.modernize.awsworkshop.io/
-* https://atlassian.awsworkshop.io/
+* https://snyk.awsworkshop.io/
+* https://newrelic-serverless.awsworkshop.io
+* https://openshift4-on-aws.awsworkshop.io/
+* https://eksworkshop.com
+* https://cdkworkshop.com
