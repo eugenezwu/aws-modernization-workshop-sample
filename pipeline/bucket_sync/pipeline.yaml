@@ -3,7 +3,7 @@ Description: This template will launch a code pipeline to copy templates from a 
 
 # It should only be necessary to update the parameters
 # run this stack as below but sub for {WORKSHOP NAME} with the workshop/company name
-# aws cloudformation create-stack --stack-name {WORKSHOP NAME}-Website-Pipeline --template-body file://pipeline.yaml --capabilities CAPABILITY_NAMED_IAM
+# aws cloudformation create-stack --stack-name Cfn-Samples-to-S3 --template-body file://pipeline.yaml --capabilities CAPABILITY_NAMED_IAM
 Parameters:
   ProjectName:
     Type: String
@@ -16,11 +16,11 @@ Parameters:
   GitHubRepo:
     Type: String
     Description: repo name
-    Default: aws-modernization-workshop-base
+    Default: aws-modernization-workshop-sample
   FullRepoURL:
     Type: String
     Description: The full url to the repo
-    Default: https://github.com/aws-samples/aws-modernization-workshop-base.git  
+    Default: https://github.com/aws-samples/aws-modernization-workshop-sample.git  
   GitHubOwner:
     Type: String
     Description: GitHub owner name

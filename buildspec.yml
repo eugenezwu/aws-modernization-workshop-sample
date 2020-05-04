@@ -13,6 +13,6 @@ phases:
     commands:
       - echo sync CFN templates to S3 Bucket
       - echo ${BUCKET}
-      - aws s3 sync cfn-samples/cloudformation/ s3://${BUCKET}/cfn/ --acl public-read
+      - aws s3 sync code-samples/cloudformation/ s3://${BUCKET}/cfn/ --acl public-read
       
       
