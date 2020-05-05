@@ -29,7 +29,7 @@ Resources:
         PrivateSubnet1ID: !GetAtt ModernizationVPC.Outputs.PrivateSubnet1
         PrivateSubnet2ID: !GetAtt ModernizationVPC.Outputs.PrivateSubnet2
         KeyPairName: eksworkshop
-        AdditionalEKSAdminArns: !ImportValue Cloud9RoleArn
+        AdditionalEKSAdminArn: !ImportValue Cloud9RoleArn
         ProvisionBastionHost: Disabled
 
 Outputs: {}
