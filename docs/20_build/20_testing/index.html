@@ -12,20 +12,20 @@
     <title>Testing :: AWS Modernization Workshop Sample Docs</title>
 
     
-    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/theme.css?1588629914" rel="stylesheet">
-    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1588629914" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/nucleus.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/fontawesome-all.min.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hybrid.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/featherlight.min.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/perfect-scrollbar.min.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/auto-complete.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/atom-one-dark-reasonable.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/theme.css?1588914180" rel="stylesheet">
+    <link href="/aws-modernization-workshop-sample/css/hugo-theme.css?1588914180" rel="stylesheet">
     
-      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1588629914" rel="stylesheet">
+      <link href="/aws-modernization-workshop-sample/css/theme-mine.css?1588914180" rel="stylesheet">
     
 
-    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery-3.3.1.min.js?1588914180"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1588629914"></script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1588629914"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/lunr.min.js?1588914180"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/auto-complete.js?1588914180"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/aws-samples.github.io\/aws-modernization-workshop-sample\/";
     
 </script>
-<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1588629914"></script>
+<script type="text/javascript" src="/aws-modernization-workshop-sample/js/search.js?1588914180"></script>
 
     
   </div>
@@ -495,7 +495,8 @@
 <ul>
 <li><a href="#testing">Testing</a>
 <ul>
-<li>
+<li><a href="#test-event-engine-permissions">Test Event Engine Permissions</a></li>
+<li><a href="#test-on-event-engine">Test on Event Engine</a>
 <ul>
 <li><a href="#some-things-to-check-for">Some things to check for</a></li>
 </ul></li>
@@ -533,6 +534,14 @@
 <p>Once you feel your workshop is complete, have a few other people test it. At this point you will probably need technical people to test it as the flow may be a little rough.  <code>hugo</code> with no options will generate an html site in <code>/public</code>. But it&rsquo;s also fairly easy to run <code>hugo server</code> and connect to <code>localhost:1313</code> to view the workshop.</p>
 
 <p>Once you have ironed out flow issues, have a few non-technical check the site for grammatical errors.  If you are using an IDE, which I hope you are, install or setup spell check to catch some mistakes early.</p>
+
+<h3 id="test-event-engine-permissions">Test Event Engine Permissions</h3>
+
+<p>Click <a href="https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?templateURL=https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/cfn/ee/teamrole-testing.yaml&amp;stackName=EE-TeamRole" target="_blank">here</a> to create the appropriate role and permissions in your account.  Once the stack completes click near the upper right on your username and account and select switch role.  Type your account, Role: <code>TeamRole</code>, Display Name and click <strong>Switch Role</strong>.  Now start testing using a role and permissions policy that Event Engine uses for the workshop.</p>
+
+<h3 id="test-on-event-engine">Test on Event Engine</h3>
+
+<p>Request a Dev event to run through the workshop on Event Engine</p>
 
 <h4 id="some-things-to-check-for">Some things to check for</h4>
 
@@ -832,19 +841,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1588629914"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1588629914"></script>
-    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1588629914"></script>
-    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1588629914"></script>
-    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1588629914"></script>
-    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/clipboard.min.js?1588914180"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.min.js?1588914180"></script>
+    <script src="/aws-modernization-workshop-sample/js/perfect-scrollbar.jquery.min.js?1588914180"></script>
+    <script src="/aws-modernization-workshop-sample/js/jquery.sticky.js?1588914180"></script>
+    <script src="/aws-modernization-workshop-sample/js/featherlight.min.js?1588914180"></script>
+    <script src="/aws-modernization-workshop-sample/js/highlight.pack.js?1588914180"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1588629914"></script>
-    <script src="/aws-modernization-workshop-sample/js/learn.js?1588629914"></script>
-    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1588629914"></script>
+    <script src="/aws-modernization-workshop-sample/js/modernizr.custom-3.6.0.js?1588914180"></script>
+    <script src="/aws-modernization-workshop-sample/js/learn.js?1588914180"></script>
+    <script src="/aws-modernization-workshop-sample/js/hugo-learn.js?1588914180"></script>
 
-    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1588629914" rel="stylesheet" />
-    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1588629914"></script>
+    <link href="/aws-modernization-workshop-sample/mermaid/mermaid.css?1588914180" rel="stylesheet" />
+    <script src="/aws-modernization-workshop-sample/mermaid/mermaid.js?1588914180"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
