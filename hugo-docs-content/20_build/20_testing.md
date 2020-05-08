@@ -10,6 +10,17 @@ Once you feel your workshop is complete, have a few other people test it. At thi
 
 Once you have ironed out flow issues, have a few non-technical check the site for grammatical errors.  If you are using an IDE, which I hope you are, install or setup spell check to catch some mistakes early.
 
+
+### Test Event Engine Permissions
+
+
+Click [here](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?templateURL=https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/cfn/ee/teamrole-testing.yaml&stackName=EE-TeamRole) to create the appropriate role and permissions in your account.  Once the stack completes click near the upper right on your username and account and select switch role.  Type your account, Role: ```TeamRole```, Display Name and click **Switch Role**.  Now start testing using a role and permissions policy that Event Engine uses for the workshop.
+
+
+### Test on Event Engine
+
+Request a Dev event to run through the workshop on Event Engine
+
 #### Some things to check for
 
 * Check for flow and make sure that someone following the instructions can complete the workshop
