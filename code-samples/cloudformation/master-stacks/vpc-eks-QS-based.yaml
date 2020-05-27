@@ -32,5 +32,6 @@ Resources:
         KeyPairName: ee-default-keypair
         AdditionalEKSAdminRoleArn: !GetAtt ModernizationRole.Outputs.Cloud9RoleArn
         ProvisionBastionHost: Disabled
+        EKSPublicAccessEndpoint: Enabled
 
 Outputs: {}
