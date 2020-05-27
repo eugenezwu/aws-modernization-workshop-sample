@@ -31,7 +31,7 @@ Resources:
         PublicSubnet2ID: !GetAtt ModernizationVPC.Outputs.PublicSubnet2
         PrivateSubnet1ID: !GetAtt ModernizationVPC.Outputs.PrivateSubnet1
         PrivateSubnet2ID: !GetAtt ModernizationVPC.Outputs.PrivateSubnet2
-        KeyPairName: eksworkshop
+        KeyPairName: ee-default-keypair
         AdditionalEKSAdminUserArn: !GetAtt ModernizationCloud9.Outputs.Cloud9RoleArn
         ProvisionBastionHost: Disabled
 
