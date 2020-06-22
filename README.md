@@ -1,5 +1,4 @@
-## AWS Modernization Workshop Samples
+## Gremlin-AWS Modernization Workshop
 
-This repo contains samples that can be used as building blocks in https://github.com/aws-samples/aws-modernization-workshop-base to help quickly build
-a modernization workshop.  See https://aws-samples.github.io/aws-modernization-workshop-sample/ for additional info.
+This repo contains  Gremlin's content for the AWS Modernization Workshop
 
