@@ -4,19 +4,19 @@ chapter: true
 weight: 1
 ---
 
-# AWS Modernization Workshop
+# AWS Modernization Workshop with Gremlin
 
 ### Welcome
 
-In this workshop you will learn why Chaos Engineering is a pattern for modernization and how to use patterns to release features and functionality at a faster pace.
+In this workshop, you will get a hands-on introduction to Chaos Engineering by assuming the role of {{fun ecommerce company name}}’s newest site reliability engineer. As {{company}}’s sole SRE, you’ll be responsible for keeping {{tech}}-based microservices architecture up and running during {{company}}’s busiest “two days” of the year.
+
+On “day one,” you’ll start by setting up the infrastructure for the online store. You’ll then be tasked with creating dashboards and alerts to track the health of the system as the first orders start rolling in.
+
+Before “day two,” you’ll have the opportunity to run Chaos Engineering experiments on your environment to ensure that what you set up is working as expected. You’ll also learn how to get ahead of potential issues before the store opens again for “day two.”
+
 
 ### Learning Objectives
-- Deploy Cloud9 as an IDE for completing workshop exercises.
-- How DevOps patterns help to release features and functionality faster.
-- Best practices for implementing 2 pizza team pipelines.
 
-{{% notice warning %}}
-<p style='text-align: left;'>
-The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
-</p>
-{{% /notice %}}
+- Recommendations for designing chaos experiments that minimize risk and maximize learning.
+- How to use Chaos Engineering to improve your DevOps practice, including tuning monitoring and alerting, setting SLAs and SLOs, and meeting the reliability and operational excellence recommendations of the Well-Architected Framework.
+- How to convince your boss by measuring and communicating the value of Chaos Engineering to others in the organization.
