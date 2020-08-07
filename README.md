@@ -12,6 +12,6 @@ First, Install [hugo](https://gohugo.io/)
 * clone this repo
 * in the root folder, setup git submodules:
   * `git submodule init`
-  * `git submodule update`
+  * `git submodule update --recursive --remote`
 * run ```hugo server```
 * open [website](http://localhost:1313)
