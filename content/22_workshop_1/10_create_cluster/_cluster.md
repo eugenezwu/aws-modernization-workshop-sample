@@ -1,9 +1,11 @@
 +++
-title = "Let's deploy the Sock shop"
-chapter = false
-weight = 10
-
+title = "Create a Cluster"
+chapter = true
+weight = 05
 +++
+
+# eksctl cluster creation 
+
 
 [eksctl](https://eksctl.io/introduction/) makes it simple to provision Kubernetes clusters in EKS. For this workshop, we will create a defauklt three node EKS cluster. With `eksctl`, this is a single command line:
 
@@ -22,32 +24,3 @@ You will see a number of messages scroll, ending with the `kubeconfig` message
 [ℹ]  kubectl command should work with "/home/ec2-user/.kube/config", try 'kubectl get nodes'
 [✔]  EKS cluster "sockshop-eks-cluster" in "us-west-2" region is ready
 </pre>
-
-You should now be able to view your cluster with `kubectl`
-
-```
-kubectl get nodes
-```
-
-Now you can deploy your sock shop
-
-First clone the repo below and and go into the deploy/kubernetes folder.
-
-```
-git clone https://github.com/microservices-demo/microservices-demo
-```
-Create the namespace
-
-```
-kubectl create namespace sock-shop
-```
-Deploy the application
-
-```
-kubectl apply -f complete-demo.yaml
-```
-
-
-
-
-
